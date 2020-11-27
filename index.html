@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/moon.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- SLIDE 1 -->
+			<section>
+				<img src="https://upload.wikimedia.org/wikipedia/en/c/cd/Anaconda_Logo.png" alt="">
+			</section>
+
+			<!-- SLIDE 2 -->
+			<section>
+				<h3>What is Anaconda?</h3>
+				<ul>
+					<li class="fragment">
+						Anaconda is a package manager used in scientific computing and data science. It’s designed to provide
+						scientific libraries and dependencies in the Python programming language.
+					</li>
+					<li class="fragment">
+						Anaconda is commonly used for machine learning and artificial intelligence applications.
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<section>
+					<h3>Why Conda?</h3>
+					<ul>
+						<li class="fragment">
+							different projects and different packages
+						</li>
+						<li class="fragment">
+							different versions needed for different projects
+						</li>
+						<li class="fragment">
+							so instead of install packages globaly in your computer. you can use a *virtual environment*
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>What is a Virtual Environment?</h3>
+					<p>With environment you can create multiple environment for different projects with different packages and
+						versions of these packages</p>
+				</section>
+
+				<section>
+					<h3>Common Environment</h3>
+					<p>
+
+						<span class="fragment fade-in">
+							Install Python
+						</span>
+						<span class="fragment fade-in">
+							> install pip
+						</span>
+						<span class="fragment fade-in">
+							> manage packages
+						</span>
+					</p>
+
+					<p>
+						<span class="fragment fade-in">
+							Install Python
+						</span>
+						<span class="fragment fade-in">
+							>> virtualenv (package)
+						</span>
+						<span class="fragment fade-in">
+							>> manage packages
+						</span>
+					</p>
+				</section>
+
+				<section>
+					<h3>Anaconda</h3>
+					<p>
+						<span class="fragment fade-in">
+							> Install Anaconda (Python DIstribution)
+						</span>
+						<br>
+						<span class="fragment fade-in">
+							>> Conda (Package manage & Mange Virtual environment)
+						</span>
+					</p>
+				</section>
+			</section>
+
+
+			<section>
+				<h1>Installation</h1>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
